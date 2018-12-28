@@ -4,95 +4,134 @@
         <title>IWINNER</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/posts.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/posts.css">
+        <link rel="stylesheet" href="../css/animation.css">
     </head>
     <body>
         <header>
-            <nav class="nav">
-                <a class="nav-link" href="#">Главная</a>
-                <a class="nav-link" href="#">Сделки</a>
-                <a class="nav-link active" href="#">Мысли</a>
-                <a class="nav-link" href="#">Новостной агрегатор</a>
-                <a class="nav-link" href="#">О блоге</a>
-                <a class="nav-link" href="#">Админ-меню</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                      
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="btn btn-outline-primary nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary nav-link" href="/posts">Сделки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary nav-link" href="/results">Результаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary nav-link" href="/thoughts">Мысли</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary nav-link" href="/news">Новостной агрегатор</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary nav-link" href="/messenger">Онлайн чат</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary nav-link" href="/comments">Лента комментариев</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary nav-link" href="/about">О блоге</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline form-search my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
             </nav>
         </header>
-        <main>
+        <main class="centerman">
             <h1 class="visually-hidden">Мысли</h1>
-            <section class="filtration horizontal-wrapper">
-                <h2>Фильтры:</h2>
-                <ul class="filter-list filter-by-different-parameters non-default-list-style horizontal-wrapper">
-                    <li class="filter-item">
-                        <button>Самые обсуждаемые</button>
+            <section id="sort" class="sort">
+                <h2>Сортировка</h2>
+                <ul class="sort-list sort-by-different-parameters non-default-list-style horizontal-wrapper">
+                    <li class="sort-item">
+                        <button class="btn btn-outline-dark button-most-discussed">Самые обсуждаемые</button>
                     </li>
-                    <li class="filter-item">
-                        <button>Самые популярные</button>
+                    <li class="sort-item">
+                        <button class="btn btn-outline-dark button-most-popular">Самые популярные</button>
                     </li>
-                    <li class="filter-item">
-                        <button>По дате публикации сделки</button>
+                    <li class="sort-item">
+                        <button class="btn btn-outline-dark button-publish-date button-active">По дате совершения сделки</button>
                     </li>
                 </ul>
             </section>
-            <ul class="thought-list non-default-list-style vertical-wrapper">
-                <li class="thought-item">
-                    <h2></h2>
-                    <img src="" alt="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <button></button>
-                </li>
-                <li class="thought-item">
-                    <h2></h2>
-                    <img src="" alt="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <button></button>
-                </li>
-                <li class="thought-item">
-                    <h2></h2>
-                    <img src="" alt="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <button></button>
-                </li>
-                <li class="thought-item">
-                    <h2></h2>
-                    <img src="" alt="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <button></button>
-                </li>
-                <li class="thought-item">
-                    <h2></h2>
-                    <img src="" alt="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <button></button>
-                </li>
-                <li class="thought-item">
-                    <h2></h2>
-                    <img src="" alt="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <button></button>
-                </li>
-                <li class="thought-item">
-                    <h2></h2>
-                    <img src="" alt="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <button></button>
-                </li>
+            <hr>
+            <ul class="post-list non-default-list-style horizontal-wrapper">
             </ul>
+            <nav aria-label="Page-navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">120</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </main>
         <footer>
         </footer>
+        <template id="template">
+            <list class="post-item">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="#" width="180" height="180" alt="Card image cap">
+                    <h2 class="post-item-name"></h2>
+                    <div class="card-body">
+                        <ul class="post-item-status non-default-list-style">
+                            <li class="post-item-likes">
+                                <img src="../img/like.png" width="20" height="20" alt=""> 
+                                <span class="visually-hidden">Лайков</span>
+                                <span class="likes"></span>
+                            </li>
+                            <li class="post-item-comments">
+                                <img src="../img/comment.png" width="20" height="20" alt="">
+                                <span class="visually-hidden">Комментариев</span>
+                                <span class="comments"></span>
+                            </li>
+                            <li class="post-item-open-data">
+                                <img src="../img/open-date.png" width="20" height="20" alt="">
+                                <span class="visually-hidden">Дата публикации</span>
+                                <span class="publish-date"></span>
+                            </li>
+                            <li class="post-item-watchers">
+                                <img src="../img/watcher.png" width="20" height="20" alt="">
+                                <span class="visually-hidden">Просмотров статьи</span> 
+                                <span class="watchers"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-primary read-post" href="#">Читать</a>
+                </div>
+            </list>
+            <div id="wait-element">
+                <div class="cssload-cube">
+                    <div class="cssload-face cssload-x"></div>
+                    <div class="cssload-face cssload-y"></div>	
+                    <div class="cssload-face cssload-z"></div>	
+                </div>
+            </div>
+        </template>
+        <script src="../js/bundle-posts.js"></script>
     </body>
 </html>

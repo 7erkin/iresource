@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: tan;
+}
+.horizontal-wrapper{
+    display: flex;
+}
+.vertical-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.visually-hidden{
+    display: none;
+}
+.non-default-list-style{
+    list-style: none;
+}
+
+.centerman{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-nav li:not(:first-of-type){
+    margin-left: 10px;
+}

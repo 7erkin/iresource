@@ -1,0 +1,23 @@
+.button-show-more-comments{
+    margin: 0 auto;
+}
+.post-status-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+.post-info{
+    justify-content: space-around;
+}
+
+.post-status-list{
+    font-size: 10px;
+}
+
+.like-call a{
+    margin-left: 50px;
+}
+.like-call b{
+    margin-top: 15px;
+}
