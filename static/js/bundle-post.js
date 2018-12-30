@@ -93,7 +93,10 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const commentAreaCssSelector = '.form-control';\r\nconst commentArea = document.querySelector(commentAreaCssSelector);\r\n\r\nmodule.exports = () => commentArea.value = '';\n\n//# sourceURL=webpack:///./frontend/js/post/clear-comment-area.js?");
+const commentAreaCssSelector = '.form-control';
+const commentArea = document.querySelector(commentAreaCssSelector);
+
+module.exports = () => commentArea.value = '';
 
 /***/ }),
 
@@ -104,7 +107,115 @@ eval("const commentAreaCssSelector = '.form-control';\r\nconst commentArea = doc
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = () => {\r\n    return [\r\n        {\r\n            id: '2',\r\n            username: 'Sara',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-20-10',\r\n            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'\r\n        },\r\n        {\r\n            id: '3',\r\n            username: 'Jessica',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2017-10-10',\r\n            text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'\r\n        },\r\n        {\r\n            id: '5',\r\n            username: 'Jane',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-12-13',\r\n            text: 'Duis aute irure dolor in reprehenderit in voluptate'\r\n        },\r\n        {\r\n            id: '1',\r\n            username: 'Tom',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-28-12',\r\n            text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui'\r\n        },\r\n        {\r\n            id: '4',\r\n            username: 'Liza',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2018-21-12',\r\n            text: 'lpa qui officia deserunt mollit ani'\r\n        },\r\n        {\r\n            id: '2',\r\n            username: 'Sara',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-20-10',\r\n            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'\r\n        },\r\n        {\r\n            id: '3',\r\n            username: 'Jessica',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2017-10-10',\r\n            text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'\r\n        },\r\n        {\r\n            id: '5',\r\n            username: 'Jane',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-12-13',\r\n            text: 'Duis aute irure dolor in reprehenderit in voluptate'\r\n        },\r\n        {\r\n            id: '1',\r\n            username: 'Tom',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-28-12',\r\n            text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui'\r\n        },\r\n        {\r\n            id: '4',\r\n            username: 'Liza',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2018-21-12',\r\n            text: 'lpa qui officia deserunt mollit ani'\r\n        },\r\n        {\r\n            id: '2',\r\n            username: 'Sara',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-20-10',\r\n            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'\r\n        },\r\n        {\r\n            id: '3',\r\n            username: 'Jessica',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2017-10-10',\r\n            text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'\r\n        },\r\n        {\r\n            id: '5',\r\n            username: 'Jane',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-12-13',\r\n            text: 'Duis aute irure dolor in reprehenderit in voluptate'\r\n        },\r\n        {\r\n            id: '1',\r\n            username: 'Tom',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2016-28-12',\r\n            text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui'\r\n        },\r\n        {\r\n            id: '4',\r\n            username: 'Liza',\r\n            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',\r\n            date: '2018-21-12',\r\n            text: 'lpa qui officia deserunt mollit ani'\r\n        }\r\n    ];\r\n};\n\n//# sourceURL=webpack:///./frontend/js/post/get-comments.js?");
+module.exports = () => {
+    return [
+        {
+            id: '2',
+            username: 'Sara',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-20-10',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+        },
+        {
+            id: '3',
+            username: 'Jessica',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2017-10-10',
+            text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'
+        },
+        {
+            id: '5',
+            username: 'Jane',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-12-13',
+            text: 'Duis aute irure dolor in reprehenderit in voluptate'
+        },
+        {
+            id: '1',
+            username: 'Tom',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-28-12',
+            text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui'
+        },
+        {
+            id: '4',
+            username: 'Liza',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2018-21-12',
+            text: 'lpa qui officia deserunt mollit ani'
+        },
+        {
+            id: '2',
+            username: 'Sara',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-20-10',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+        },
+        {
+            id: '3',
+            username: 'Jessica',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2017-10-10',
+            text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'
+        },
+        {
+            id: '5',
+            username: 'Jane',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-12-13',
+            text: 'Duis aute irure dolor in reprehenderit in voluptate'
+        },
+        {
+            id: '1',
+            username: 'Tom',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-28-12',
+            text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui'
+        },
+        {
+            id: '4',
+            username: 'Liza',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2018-21-12',
+            text: 'lpa qui officia deserunt mollit ani'
+        },
+        {
+            id: '2',
+            username: 'Sara',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-20-10',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+        },
+        {
+            id: '3',
+            username: 'Jessica',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2017-10-10',
+            text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'
+        },
+        {
+            id: '5',
+            username: 'Jane',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-12-13',
+            text: 'Duis aute irure dolor in reprehenderit in voluptate'
+        },
+        {
+            id: '1',
+            username: 'Tom',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2016-28-12',
+            text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui'
+        },
+        {
+            id: '4',
+            username: 'Liza',
+            userphoto: 'http://bootstraptema.ru/snippets/element/2016/comments/com-4.jpg',
+            date: '2018-21-12',
+            text: 'lpa qui officia deserunt mollit ani'
+        }
+    ];
+};
 
 /***/ }),
 
@@ -115,7 +226,48 @@ eval("module.exports = () => {\r\n    return [\r\n        {\r\n            id: '
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const getComments = __webpack_require__(/*! ./get-comments */ \"./frontend/js/post/get-comments.js\");\r\nconst setLikeToComment = __webpack_require__(/*! ./set-like-to-comment */ \"./frontend/js/post/set-like-to-comment.js\");\r\nconst setLikeToPost = __webpack_require__(/*! ./set-like-to-post */ \"./frontend/js/post/set-like-to-post.js\");\r\nconst leaveComment = __webpack_require__(/*! ./leave-comment */ \"./frontend/js/post/leave-comment.js\");\r\nconst renderComments = __webpack_require__(/*! ./render-comments */ \"./frontend/js/post/render-comments.js\");\r\nconst sortCommentsByDate = __webpack_require__(/*! ./sort-comments-by-date */ \"./frontend/js/post/sort-comments-by-date.js\");\r\nconst isAnyCommentsLeft = __webpack_require__(/*! ./is-any-comments-left */ \"./frontend/js/post/is-any-comments-left.js\");\r\nconst sendComment = __webpack_require__(/*! ./send-comment */ \"./frontend/js/post/send-comment.js\");\r\nconst clearCommentArea = __webpack_require__(/*! ./clear-comment-area */ \"./frontend/js/post/clear-comment-area.js\");\r\n\r\nconst hideElement = cssSelector => document.querySelector(cssSelector).hidden = true;\r\n\r\nconst COMMENTS_FOR_ONCE_RENDER = 10;\r\nconst showMoreButtonCssSelector = '.button-show-more-comments';\r\nconst sendCommentButtonCssSelector = '.pull-right';\r\n\r\nconst comments = getComments();\r\nsortCommentsByDate(comments);\r\nrenderComments(comments, COMMENTS_FOR_ONCE_RENDER);\r\nif(!isAnyCommentsLeft(comments.length))\r\n            hideElement(showMoreButtonCssSelector);\r\n\r\ndocument.\r\n    querySelector(showMoreButtonCssSelector).\r\n    addEventListener('click', () => {\r\n        renderComments(comments, COMMENTS_FOR_ONCE_RENDER);\r\n        if(!isAnyCommentsLeft(comments.length))\r\n            hideElement(showMoreButtonCssSelector);\r\n    });\r\n\r\ndocument.\r\n    querySelector(sendCommentButtonCssSelector). \r\n    addEventListener('click', () => {\r\n        sendComment();\r\n        clearCommentArea();\r\n    });\r\n\r\ndocument\r\n    .querySelector('.like-call a')\r\n    .addEventListener('click', () => {\r\n        document.querySelector('.like-call img').src = '../img/set-like.png';\r\n    });\n\n//# sourceURL=webpack:///./frontend/js/post/index.js?");
+const getComments = __webpack_require__(/*! ./get-comments */ "./frontend/js/post/get-comments.js");
+const setLikeToComment = __webpack_require__(/*! ./set-like-to-comment */ "./frontend/js/post/set-like-to-comment.js");
+const setLikeToPost = __webpack_require__(/*! ./set-like-to-post */ "./frontend/js/post/set-like-to-post.js");
+const leaveComment = __webpack_require__(/*! ./leave-comment */ "./frontend/js/post/leave-comment.js");
+const renderComments = __webpack_require__(/*! ./render-comments */ "./frontend/js/post/render-comments.js");
+const sortCommentsByDate = __webpack_require__(/*! ./sort-comments-by-date */ "./frontend/js/post/sort-comments-by-date.js");
+const isAnyCommentsLeft = __webpack_require__(/*! ./is-any-comments-left */ "./frontend/js/post/is-any-comments-left.js");
+const sendComment = __webpack_require__(/*! ./send-comment */ "./frontend/js/post/send-comment.js");
+const clearCommentArea = __webpack_require__(/*! ./clear-comment-area */ "./frontend/js/post/clear-comment-area.js");
+
+const hideElement = cssSelector => document.querySelector(cssSelector).hidden = true;
+
+const COMMENTS_FOR_ONCE_RENDER = 10;
+const showMoreButtonCssSelector = '.button-show-more-comments';
+const sendCommentButtonCssSelector = '.pull-right';
+
+const comments = getComments();
+sortCommentsByDate(comments);
+renderComments(comments, COMMENTS_FOR_ONCE_RENDER);
+if(!isAnyCommentsLeft(comments.length))
+            hideElement(showMoreButtonCssSelector);
+
+document.
+    querySelector(showMoreButtonCssSelector).
+    addEventListener('click', () => {
+        renderComments(comments, COMMENTS_FOR_ONCE_RENDER);
+        if(!isAnyCommentsLeft(comments.length))
+            hideElement(showMoreButtonCssSelector);
+    });
+
+document.
+    querySelector(sendCommentButtonCssSelector). 
+    addEventListener('click', () => {
+        sendComment();
+        clearCommentArea();
+    });
+
+document
+    .querySelector('.like-call a')
+    .addEventListener('click', () => {
+        document.querySelector('.like-call img').src = '../img/set-like.png';
+    });
 
 /***/ }),
 
@@ -126,7 +278,12 @@ eval("const getComments = __webpack_require__(/*! ./get-comments */ \"./frontend
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const commentCss = '.media';\r\n\r\nmodule.exports = (quantityAllComments => {\r\n    const quantityRenderedComments = document.querySelectorAll(commentCss).length;\r\n    return quantityRenderedComments < quantityAllComments;\r\n});\n\n//# sourceURL=webpack:///./frontend/js/post/is-any-comments-left.js?");
+const commentCss = '.media';
+
+module.exports = (quantityAllComments => {
+    const quantityRenderedComments = document.querySelectorAll(commentCss).length;
+    return quantityRenderedComments < quantityAllComments;
+});
 
 /***/ }),
 
@@ -137,7 +294,7 @@ eval("const commentCss = '.media';\r\n\r\nmodule.exports = (quantityAllComments 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./frontend/js/post/leave-comment.js?");
+
 
 /***/ }),
 
@@ -148,7 +305,28 @@ eval("\n\n//# sourceURL=webpack:///./frontend/js/post/leave-comment.js?");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let quantityRenderedComment = 0;\r\n\r\nconst templateCss = '#template';\r\nconst commentCss = '.media';\r\nconst commentListCss = '.media-list';\r\nconst template = document.querySelector(templateCss);\r\nconst commentNode = template.content.querySelector(commentCss); \r\nconst commentList = document.querySelector(commentListCss);\r\n\r\nmodule.exports = (comments, maxRenderedComment) => {\r\n    const fragment = document.createDocumentFragment();\r\n    for(let i = 0; i < maxRenderedComment && quantityRenderedComment < comments.length; ++i, ++quantityRenderedComment){\r\n        const comment = comments[quantityRenderedComment];\r\n        const node = commentNode.cloneNode(true);\r\n        node.querySelector('.pull-left img').src = comment.userphoto;\r\n        node.querySelector('.text-success').innerText = comment.username;\r\n        node.querySelector('.text-muted').innerText = comment.date;\r\n        node.querySelector('.comment-body').innerText = comment.text;\r\n        fragment.appendChild(node);\r\n    }\r\n    commentList.appendChild(fragment);\r\n};\n\n//# sourceURL=webpack:///./frontend/js/post/render-comments.js?");
+let quantityRenderedComment = 0;
+
+const templateCss = '#template';
+const commentCss = '.media';
+const commentListCss = '.media-list';
+const template = document.querySelector(templateCss);
+const commentNode = template.content.querySelector(commentCss); 
+const commentList = document.querySelector(commentListCss);
+
+module.exports = (comments, maxRenderedComment) => {
+    const fragment = document.createDocumentFragment();
+    for(let i = 0; i < maxRenderedComment && quantityRenderedComment < comments.length; ++i, ++quantityRenderedComment){
+        const comment = comments[quantityRenderedComment];
+        const node = commentNode.cloneNode(true);
+        node.querySelector('.pull-left img').src = comment.userphoto;
+        node.querySelector('.text-success').innerText = comment.username;
+        node.querySelector('.text-muted').innerText = comment.date;
+        node.querySelector('.comment-body').innerText = comment.text;
+        fragment.appendChild(node);
+    }
+    commentList.appendChild(fragment);
+};
 
 /***/ }),
 
@@ -159,7 +337,12 @@ eval("let quantityRenderedComment = 0;\r\n\r\nconst templateCss = '#template';\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const commentAreaCssSelector = '.form-control';\r\nconst URL_POST_COMMENT = '#';\r\n\r\nmodule.exports = () => {\r\n    \r\n};\n\n//# sourceURL=webpack:///./frontend/js/post/send-comment.js?");
+const commentAreaCssSelector = '.form-control';
+const URL_POST_COMMENT = '#';
+
+module.exports = () => {
+    
+};
 
 /***/ }),
 
@@ -170,7 +353,7 @@ eval("const commentAreaCssSelector = '.form-control';\r\nconst URL_POST_COMMENT 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./frontend/js/post/set-like-to-comment.js?");
+
 
 /***/ }),
 
@@ -181,7 +364,7 @@ eval("\n\n//# sourceURL=webpack:///./frontend/js/post/set-like-to-comment.js?");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./frontend/js/post/set-like-to-post.js?");
+
 
 /***/ }),
 
@@ -192,8 +375,9 @@ eval("\n\n//# sourceURL=webpack:///./frontend/js/post/set-like-to-post.js?");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = (comments) => {};\n\n//# sourceURL=webpack:///./frontend/js/post/sort-comments-by-date.js?");
+module.exports = (comments) => {};
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=bundle-post.js.map

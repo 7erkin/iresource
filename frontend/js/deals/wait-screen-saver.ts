@@ -1,12 +1,9 @@
 const template = document.querySelector('#template');
-const waitNode = template.content.querySelector('#wait-element'); 
+const waitNode = (<HTMLTemplateElement>template).content.querySelector('#wait-element'); 
+const dealList = document.querySelector('.deal-list');
 
-class ViewWait{
-    constructor() {
-
-    }
+export class WaitScreenSaver{
     set(){
-        const dealList = document.querySelector('.deal-list');
         const node = waitNode.cloneNode(true);
         dealList.appendChild(node);
     }
@@ -16,5 +13,3 @@ class ViewWait{
         node.remove();
     }
 }
-
-module.exports = ViewWait;

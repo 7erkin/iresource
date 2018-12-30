@@ -10,5 +10,6 @@ module.exports = {
         filename: 'bundle-' + '[name].js',
         path: path.resolve(__dirname, 'static/js')
     },
+    devtool: 'source-map',
     mode: 'development'
 }
